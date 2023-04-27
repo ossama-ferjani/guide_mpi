@@ -1,19 +1,28 @@
-
+<?php
+require('publishQuestionAction.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
-<?php include 'head.php'; ?>
+<?php include 'head.php';
+require('publishQuestionAction.php');
+?>
+
 <body>
     <?php include 'navbar.php'; ?>
 
-    <br><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <form class="container" method="POST">
 
-        <?php 
-            if(isset($errorMsg)){ 
-                echo '<p>'.$errorMsg.'</p>'; 
-            }elseif(isset($successMsg)){ 
-                echo '<p>'.$successMsg.'</p>'; 
-            }
+        <?php
+        if (isset($errorMsg)) {
+            echo '<p>' . $errorMsg . '</p>';
+        } elseif (isset($successMsg)) {
+            echo '<p>' . $successMsg . '</p>';
+        }
         ?>
 
         <div class="mb-3">
@@ -30,6 +39,7 @@
         </div>
 
         <button type="submit" class="btn btn-primary" name="validate">Publier la question</button>
-   </form>
+    </form>
 </body>
+
 </html>
