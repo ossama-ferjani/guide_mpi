@@ -4,7 +4,7 @@ require('publishQuestionAction.php');
 <!DOCTYPE html>
 <html lang="en">
 <?php include 'head.php';
-require('publishQuestionAction.php');
+
 ?>
 
 <body>
