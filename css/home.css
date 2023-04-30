@@ -44,7 +44,7 @@ header {
 
 .navbar {
     position: fixed;
-    width: 90%;
+    width: 100%;
     top: 0;
     transition: 0.4s;
     padding: 10px 20px;
