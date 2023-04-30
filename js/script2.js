@@ -13,6 +13,7 @@ const telErrorMessage = document.getElementById('telerror-message');
 const mailerrorMessage = document.getElementById('mailerror-message');
 const passerrorMessage = document.getElementById('passerror-message');
 const passconferrorMessage = document.getElementById('passconferror-message');
+const inputs = form.querySelectorAll('input[required]');
 
 
 
@@ -106,10 +107,7 @@ passwordConfirm.addEventListener('blur', function() {
         }
       });
 submitButton.addEventListener('click', function(event) {
-
-
-
-    if (test=true) {
+    if (test==true) {
       // Conditions are met, allow form submission
   
       return true;
@@ -119,3 +117,19 @@ submitButton.addEventListener('click', function(event) {
       return false;
     }
   })
+submitButton.addEventListener('click', function(event) {
+    let isValid = true;
+    
+    inputs.forEach(function(input) {
+      if (!input.validity.valid) {
+        input.classList.add('invalid-input');
+        isValid = false;
+      } else {
+        input.classList.remove('invalid-input');
+      }
+    });
+    
+    if (!isValid) {
+      event.preventDefault();
+    }
+  });

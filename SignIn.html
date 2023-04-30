@@ -15,26 +15,27 @@
       <div class="row justify-content-center align-items-center">
         <div class="col-md-4">
           <div class="form-container">
-            <h2 id="title">MPI student guide</h2>
+            <h2 id="title">MPI student guide</h2><br>
      
             
             <div class="tab-content mt-3">
               <div id="signIn">
                 <form>
                   <div class="form-group">
-                    <label for="email">Email universitaire</label>
-                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="✉  email">
+                    <label for="email" class="input-label">Email universitaire:</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="✉  email" required>
+                    
                     
                   </div>
                   <div class="form-group">
-                    <label for="password">Mot de passe</label>
-                    <input type="password"  id="password" class="form-control" placeholder="Mot de passe (minimum 8 caractéres)">
+                    <label for="password" class="input-label">Mot de passe:</label>
+                    <input type="password"  id="password" class="form-control" placeholder="Mot de passe (minimum 8 caractéres)" required>
                     <a  id="emailHelp2" class="form-text text-muted" href="reset_password.html">Mot de passe oublié ? </a>
                     <span id="error-message"></span>
 
                   </div>
                   <div style="text-align: center;">
-                  <button type="submit" id="submit" class="custom-button" onclick="goToPage()">Se connecter</button><br><br>
+                  <button type="submit" id="submit" class="custom-button">Se connecter</button><br><br>
                   <small id="emailHelp2" class="form-text text-muted">Vouz n'avez pas de compte ? <a href="SignUp.html">  Inscrivez vous</a></small>
                 </form>
               </div>

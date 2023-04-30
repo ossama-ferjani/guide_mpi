@@ -43,4 +43,21 @@ font-weight: lighter;
     text-shadow: 4px 4px 4px #aaa;
   }
 
+  .invalid-input {
+    box-shadow: 0 0 5px red;
+  }
+
+  
+
+  .form-group {
+    position: relative;
+  }
+  .input_label{
+    position: absolute;
+    font-weight: 200;
+    font-size: medium;
+    font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';;
+  }
+
+  
 

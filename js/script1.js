@@ -4,6 +4,7 @@ const form = document.querySelector('form');
 const password = document.querySelector('#password');
 const email = document.getElementById('email');
 const errorMessage = document.getElementById('error-message');
+const inputs = form.querySelectorAll('input[required]');
 
 
 function isValidEmail(email) {
@@ -17,7 +18,7 @@ submitButton.addEventListener('click', function(event) {
 
 
 
-    if (password.value.length>=8 && password.value!== '' && isValidEmail(email)) {
+    if ((password.value!="") && (isValidEmail(email))) {
       // Conditions are met, allow form submission
       window.location.href=SignUp.html;
       return true;
@@ -33,7 +34,28 @@ errorMessage.style.fontSize = 'smaller';
       return false;
     }
   })
+ 
 
+  
+  
+  submitButton.addEventListener('click', function(event) {
+    let isValid = true;
+    
+    inputs.forEach(function(input) {
+      if (!input.validity.valid) {
+        input.classList.add('invalid-input');
+        isValid = false;
+      } else {
+        input.classList.remove('invalid-input');
+      }
+    });
+    
+    if (!isValid) {
+      event.preventDefault();
+    }
+  });
+  
+  
 
 
 
