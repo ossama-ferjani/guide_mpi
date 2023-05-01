@@ -11,25 +11,6 @@ body {
     background-color: #D8B6A4;
 }
 
-h1 {
-    color: white;
-    font-size: 5em;
-    font-weight: bold;
-}
-
-h4 {
-    color: white;
-    font-size: 2em;
-}
-
-#gal-insat {
-    text-align: center;
-}
-
-h2 {
-    font-size: 3em;
-    font-weight: bold;
-}
 
 header {
     position: relative;
@@ -44,7 +25,7 @@ header {
 
 }
 
-/*
+
 
 .navbar {
     position: fixed;
@@ -85,6 +66,7 @@ nav.sticky {
 
 .nav-link:hover {
 
+    /*border-top:  3px solid #EEEBDD;*/
     color: #EEEBDD;
 
 }
@@ -137,25 +119,20 @@ nav.sticky {
 
 }
 
-*/
+
 .bg-body-tertiary {
+    /*background-color: black !important; */
     background: transparent !important;
 
 }
 
-/*
+
 .navbar-toggler {
     background-color: #630000;
     border-radius: 100px;
     padding: 10px;
 
 }
-
-
-
-
-
-
 
 
 #sign-in {
@@ -188,106 +165,7 @@ nav.sticky {
     background-color: #760a0a;
     transition: 300ms;
 }
-*/
 
-
-#landing-txt {
-    position: relative;
-    /*top: 100px;*/
-    margin: auto;
-    border: 15px solid #EEEBDD;
-    padding: 50px 100px;
-    width: fit-content;
-
-}
-
-#sign-up2 {
-    position: relative;
-
-    width: fit-content;
-    margin: 0 auto;
-
-    font-size: 2em;
-
-    background-color: #EEEBDD;
-    border-radius: 40px;
-    font-weight: bold;
-    transition-duration: 0.25s;
-
-}
-
-#sign-up2>a {
-    color: #141E27;
-    text-decoration: none;
-    margin: 10px 20px;
-}
-
-#sign-up2:hover {
-    border: none;
-    transform: translateY(-10px);
-
-}
-
-#explore {
-    position: relative;
-    background-color: #630000;
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    padding: 1px 0px;
-    font-size: 1.5em;
-    font-weight: bold;
-    transition-duration: 250ms;
-
-
-}
-
-#explore a {
-
-    color: #EEEBDD;
-    text-decoration: none;
-}
-
-
-#explore:hover {
-    transform: translateY(10px);
-}
-
-
-.ctn-2 {
-    width: 90%;
-    margin: 0 auto;
-    background-color: #EEEBDD;
-    padding: 30px 100px;
-
-}
-
-.ctn-f {
-    margin: 0 auto;
-    padding-left: 10%;
-    background-color: #630000;
-}
-
-#footer {
-    border-top: 5px solid #141E27;
-    background-color: #630000;
-    text-align: center;
-}
-
-h5 {
-    color: #EEEBDD;
-    font-weight: bold;
-}
-
-.ctn-3 {
-    color: #EEEBDD;
-    text-align: left;
-}
-
-.ctn-3>a {
-    color: #EEEBDD;
-    text-decoration: none;
-}
 
 .icon {
     color: #EEEBDD;
@@ -300,7 +178,7 @@ h5 {
     font-size: 1.35em !important;
     margin: 10px;
 }
-/*
+
 .dropdown-menu {
     border-radius: 0px;
     width: 100%;
@@ -319,31 +197,11 @@ h5 {
     background-color: #630000;
 
 }
-*/
-.p-head {
-    color: #141E27;
-    font-weight: bold;
-    font-size: 2.5em;
-    margin: 20px 20px 0px 0px;
-}
 
-.p-sub {
-    color: #141E27;
-    
-    font-size: 1.5em;
-}
 
-#a_propos_ctn>.row>.row{
-    margin-right: 10px;
-}
 
-.num-info {
-    color: #EEEBDD;
-    font-weight: bold;
-    font-size: 5em;
 
-}
-/*
+
 #account-dropdown {
     right: 20px;
     top: 10px;
@@ -371,6 +229,7 @@ h5 {
 
 #profile-mini {
     position: relative;
+    /*background: black;*/
     border-radius: 50%;
     margin-right: 10px;
     padding: 10px;
@@ -432,7 +291,6 @@ h5 {
 .dropdown-menu li a:hover {
     background: none;
 }
-*/
 
 @media (min-width: 768px) {
     .animate {
@@ -482,46 +340,3 @@ h5 {
     animation-name: slideIn;
 }
 
-#sections_ctn{
-    text-align: center;
-}
-
-.sections {
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    border-radius: 10px;
-    margin: 20px 20px;
-    height: 200px;
-    padding: 0px 10px 10px 10px;
-
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-
-    overflow: hidden;
-
-}
-
-
-.sections span {
-    font-weight: bold;
-    color: #141E27;
-    font-size: 1.1em;
-    text-decoration: none;
-}
-
-.sections a {
-    text-decoration: none;
-}
-
-.sections:hover,
-.sections:focus,
-.sections:active {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-}
