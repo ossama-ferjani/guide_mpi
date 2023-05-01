@@ -1,0 +1,108 @@
+body{
+font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+background-color: #D8B6A4;}
+.card-header {
+    background-color: white;
+    height :110px;
+}
+.card-header img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.text-black{
+    margin-top: 30px;
+}
+
+
+.card-header h2 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+
+
+
+
+.card-body img {
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #630000;
+    color: #fff;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+    background-color:#630000 ;
+}
+
+.nav-tabs .nav-link {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    background-color: #630000;
+}
+
+
+.tab-content {
+    padding-top: 1.5rem;
+    font-size: 1.2rem;
+}
+
+
+.card {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height:650px;
+}
+.edit-button {
+    width: 100px;
+    font-size: 20px;
+    background-color: #630000;
+
+}
+.edit-button:hover {
+    background-color: #630000;
+}
+/* Navbar links */
+.navbar a.nav-link {
+    color: #fff; /* Set the color to white */
+}
+
+/* Active navbar link */
+.navbar a.nav-link.active {
+    color: #fff; /* Set the color to white */
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link,
+.navbar-nav .nav-link:hover {
+    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: white;
+}
+.navbar-nav .nav-link {
+    color: #fff; /* Set default color to white */
+}
+.nav-tabs .nav-link {
+    color: white !important;
+}
+
+.nav-tabs .nav-link:hover {
+    color: white !important;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #fff; /* Set color to white when hovering or when active */
+}
