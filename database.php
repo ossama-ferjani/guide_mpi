@@ -1,6 +1,6 @@
 <?php
 
-$dest = 'mysql:host=localhost;dbname=database';
+$dest = 'mysql:host=localhost;dbname=guide_mpi_db';
 $user = 'root';
 $pass = '';
 try {
