@@ -2,6 +2,7 @@
   
     require('getInfosOfEditedQuestionAction.php');
     require('editQuestionAction.php');
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
