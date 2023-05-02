@@ -1,6 +1,6 @@
 <?php
 include 'securityAction';
-include 'ConnexionDB.php';
+include 'database.php';
 if(isset($_POST["submit"])) {
     $name = $_POST["Titre"];
     $comment = $_POST["comment"];
