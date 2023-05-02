@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/dynamic_navbar.css">
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -28,7 +28,8 @@
     <header>
         <!--<img id="landing" src="img/landing.png" alt="Landing">-->
         <?php
-            include('navbar.php');
+            include('session_start.php');
+            include('dynamic_navbar.php');
         ?>
 
         <br><br><br><br><br><br><br>
