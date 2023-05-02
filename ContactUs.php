@@ -33,7 +33,7 @@
 </head>
 <body style="background-color:#EEEBDD">
 <div class="container">
-    <form method="post" action="feedback.php">
+    <form method="post" action="ContactUsAction.php">
     <div class="row">
         <div class="col-md-7" style="background-color: white;">
             <h4>YOUR FEEDBACK </h4>
