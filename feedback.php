@@ -1,33 +1,24 @@
 <?php
+include 'ConnexionDB.php';
 if(isset($_POST["submit"])) {
-    $name = $_POST["name"];
-    $email = $_POST["email"];
-    $phone = $_POST["phone"];
+    $name = $_POST["Titre"];
     $comment = $_POST["comment"];
+    $numInscri=$_SESSION["numInscri"];
 
-    $host = 'localhost';
-    $user = 'root';
-    $password = '';
-    $dbname = 'feedback'; 
 
-    $conn = mysqli_connect($host, $user, $password, $dbname);
-
-    if (!$conn) {
-        die('Connexion échouée : ' . mysqli_connect_error());
-    }
-
-    $stmt = $conn->prepare("INSERT INTO feedback (name, email, phone, comment) VALUES (?, ?, ?, ?)");
-    $stmt->bind_param("ssss", $name, $email, $phone, $comment); 
-    
+    $stmt = $cnx->prepare("INSERT INTO feedback (contenu, Titre,NumInscri) VALUES ( ?, ?,?)");
+    $stmt->bindParam(1, $comment);
+    $stmt->bindParam(2, $name);   
+    $stmt->bindParam(3, $numInscri); 
 
     try {
         $stmt->execute();
-        $conn = null;
+        $cnx = null;
         header('location: ContactUs.html?success=true');
     } catch(PDOException $e) {
         echo "Error: " . $e->getMessage();
     }
-    $conn = null;
+    $cnx = null;
 }
 //header('location: ContactUs.php');
 ?>

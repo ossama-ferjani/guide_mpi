@@ -8,6 +8,28 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <title>Contact Us</title>
     <link rel="icon" href="logo.ico" type="image/png">
+    <style> 
+    input[type="file"]{
+        display: none;
+    }
+    
+    label[for="Upload_button"]{
+        display: inline-block;
+        color: #fff;
+        background-color: #ad9261;
+        text-align: center;
+        padding: 15px 40px;
+        font-size: 18px;
+        letter-spacing: 1.5px;
+        cursor: pointer;
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.35);
+        border-radius: 3px;
+        margin-bottom: 15px;
+    }
+    
+    label:active{
+        transform: scale(0.9);
+    }</style>
 </head>
 <body style="background-color:#EEEBDD">
 <div class="container">
@@ -16,20 +38,16 @@
         <div class="col-md-7" style="background-color: white;">
             <h4>YOUR FEEDBACK </h4>
             <div class="mb-3">
-                <label for="formGroupExampleInput" class="form-label">Nom</label>
-                <input type="text" class="form-control" id="formGroupExampleInput"  name="name" placeholder="Entrer votre nom" >
-            </div>
-            <div class="mb-3">
-                <label for="formGroupExampleInput2" class="form-label">Email</label>
-                <input type="email" class="form-control" id="formGroupExampleInput2"  name="email" placeholder="Entrer votre email(doit inclure '@')">
-            </div>
-            <div class="mb-3">
-                <label for="formGroupExampleInput3" class="form-label">Numéro De Téléphone</label>
-                <input type="number" class="form-control" id="formGroupExampleInput3" name="phone" placeholder="Entrer votre numéro de telephone(8 chiffres) ">
+                <label for="formGroupExampleInput" class="form-label">Titre</label>
+                <input type="text" class="form-control" id="formGroupExampleInput"  name="Titre" placeholder="Donner un titre" >
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label">Commentaire</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" name="comment" placeholder="Taper votre commentaire ici" rows="3"></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" name="comment" placeholder="Taper votre commentaire ici" rows="3" style="height: 80px;"></textarea>
+            </div>
+            <div>
+                <input type="file" id="Upload_button">
+                <label for="Upload_button">Joindre un fichier</label>
             </div>
             <button class="btn btn-primary" id="sub" name="submit">Submit</button>
         </div>
