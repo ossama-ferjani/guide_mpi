@@ -1,12 +1,12 @@
 <? php 
-require('databse.php');
+require('database.php');
 
 
 
 // Requête SQL pour extraire les informations de l'étudiant
 $request = "SELECT Num_Inscri, Nom, Prenom, Nom_Filiere, email, Niveau FROM student, filiere, login WHERE student.id = login.id_student AND student.id_filiere = filiere.id AND login.username = 'username'";
 
-$result = $conn->query($request);
+$result = $cnx->query($request);
 
 // Vérification du résultat de la requête
 if ($result->num_rows > 0) {
@@ -41,5 +41,5 @@ if ($result->num_rows > 0) {
 }
 
 // Fermeture de la connexion à la base de données
-$conn->close();
+$cnx->close();
 ?>
