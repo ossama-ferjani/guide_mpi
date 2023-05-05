@@ -1,3 +1,4 @@
+<? php include 'studentcardaction.php' ; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +7,7 @@
   <title>Student Card</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
-  <link rel="stylesheet" href="studentcard.css">
+  <link rel="stylesheet" href="css/studentcard.css">
 </head>
 <body>
 <div class="container mt-5">
@@ -95,6 +96,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/js/bootstrap.min.js"></script>
-<script src="studentcard.js"></script>
+<script src="js/studentcard.js"></script>
 </body>
 </html>
