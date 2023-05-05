@@ -1,4 +1,6 @@
-<?php require('studentcardaction.php'); ?>
+<? php require('studentcardinfo.php');
+      require('studentcardedit.php');
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,6 +38,10 @@
               </li>
             </ul>
             <div class="tab-content">
+
+              <--  ************************************Informations personnelles --> 
+
+
               <div class="tab-pane fade show active" id="tab1">
                 <h4>Nom: <?php echo $nom . " " . $prenom; ?></h4>
                 <br>
@@ -49,56 +55,72 @@
                 <br>
                 <h4>Filière: <?php echo $filiere; ?></h4>
               </div>
-              <div class="tab-pane fade" id="tab2">
-                <div class="row mt-2">
-                  <div class="col-md-6"><label class="labels">Nom</label><input type="text" class="form-control" placeholder="Nom" value=""></div>
-                  <div class="col-md-6"><label class="labels">Prénom</label><input type="text" class="form-control" value="" placeholder="Prénom"></div>
-                </div>
 
-                <div class="row mt-3">
-                  <div class="col-md-12"><label class="labels">Email</label><input type="text" class="form-control" placeholder="entrer votre email universiataire" value=""></div>
-                  <br> <br>
-                  <div class="col-md-12"><label class="labels">Numéro de téléphone</label><input type="text" class="form-control" placeholder="entrer votre numéro de téléphone" value=""></div>
-                  <br> <br>
-                  <label for="niveau_etudes">Niveau d'études:</label>
-                  <input type="text" list="niveaux" id="niveau_etudes" name="niveau_etudes">
-                  <datalist id="niveaux">
-                    <option value="1ère année">
-                    <option value="2ème année">
-                  </datalist>
 
-                  <label for="filières">Niveau d'études:</label>
-                  <input type="text" list="filières" id="filieres" name="filières">
-                  <datalist id="filières">
-                    <option value="MPI">
-                    <option value="CBA">
-                    <option value="RT">
-                    <option value="GL">
-                    <option value="IIA">
-                    <option value="IMI">
-                  </datalist>
-                  <div class="mt-3">
-                    <label for="student_image">Image de l'étudiant :</label>
-                    <input type="file" id="student_image" name="student_image">
-                  </div>
-                  <div class="button mt-2 d-flex flex-row justify-content-center align-items-center">
-                    <button class="btn btn-sm btn-outline-primary edit-button text-white">Editer</button>
+
+              <--  ************************************Editer votre profil -->
+
+
+              <form method="post" action="traitement.php">
+                <div class="tab-pane fade" id="tab2">
+                  <div class="row mt-2">
+                    <div class="col-md-6">
+                      <label class="labels">Nom</label>
+                      <input type="text" class="form-control" placeholder="Nom" name="nom" value="">
+                    </div>
+                    <div class="col-md-6">
+                      <label class="labels">Prénom</label>
+                      <input type="text" class="form-control" value="" placeholder="Prénom" name="prenom">
+                    </div>
                   </div>
 
+                  <div class="row mt-3">
+                    <div class="col-md-12">
+                      <label class="labels">Email</label>
+                      <input type="text" class="form-control" placeholder="entrer votre email universiataire" name="email" value="">
+                    </div>
+                    <br>
+                    <br>
+                    <div class="col-md-12">
+                      <label class="labels">Numéro de téléphone</label>
+                      <input type="text" class="form-control" placeholder="entrer votre numéro de téléphone" name="numero_telephone" value="">
+                    </div>
+                    <br>
+                    <br>
+                    <label for="niveau_etudes">Niveau d'études:</label>
+                    <input type="text" list="niveaux" id="niveau_etudes" name="niveau_etudes">
+                    <datalist id="niveaux">
+                      <option value="1ère année">
+                      <option value="2ème année">
+                    </datalist>
 
-
+                    <label for="filières">Filière:</label>
+                    <input type="text" list="filières" id="filieres" name="filiere">
+                    <datalist id="filières">
+                      <option value="MPI">
+                      <option value="CBA">
+                      <option value="RT">
+                      <option value="GL">
+                      <option value="IIA">
+                      <option value="IMI">
+                    </datalist>
+                    <div class="mt-3">
+                      <label for="student_image">Image de l'étudiant :</label>
+                      <input type="file" id="student_image" name="student_image">
+                    </div>
+                    <div class="button mt-2 d-flex flex-row justify-content-center align-items-center">
+                      <button class="btn btn-sm btn-outline-primary edit-button text-white" name="submit">Editer</button>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </form>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/js/bootstrap.min.js"></script>
-  <script src="js/studentcard.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/js/bootstrap.min.js"></script>
+        <script src="js/studentcard.js"></script>
 </body>
 
 </html>
