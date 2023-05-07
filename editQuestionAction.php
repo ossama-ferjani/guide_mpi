@@ -3,9 +3,11 @@
 require('database.php');
 
 //Validation du formulaire
+
 if(isset($_POST['validate'])){
 
     //Vérifier si les champs sont remplis
+
     if(!empty($_POST['title']) AND !empty($_POST['description']) AND !empty($_POST['content'])){
 
         //Les données à faire passer dans la requête
@@ -18,7 +20,8 @@ if(isset($_POST['validate'])){
         $editQuestionOnWebsite->execute(array($new_question_title, $new_question_description, $new_question_content, $idOfQuestion));
 
         //Redirection vers la page d'affichage des questions de l'utilisateur
-        header('Location: my-questions.php');
+        
+        header('Location: myquestions.php');
 
     }else{
         $errorMsg = "Veuillez compléter tous les champs...";

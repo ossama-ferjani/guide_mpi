@@ -1,4 +1,10 @@
 myQuestions
 publishquestion
 editQuestion
+deleteQuestionAction
+affichage
+recherche
+and answers
+(userprofile ->>>thirsday enshallah
+)
 
