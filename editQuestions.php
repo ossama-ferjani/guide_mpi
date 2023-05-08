@@ -13,7 +13,7 @@
     <br><br>
     <br><br>
     <div class="container">
-        <?php if(isset($errorMsg)){ echo '<p>'.$errorMsg.'</p>'; } ?>
+        <?php  if(isset($errorMsg)){ echo '<p>'.$errorMsg.'</p>'; } ?>
         
         <?php 
             if(isset($question_content)){ 
