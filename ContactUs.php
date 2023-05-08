@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="./style.css" rel="stylesheet" >
+    <link href="css/style.css" rel="stylesheet" >
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <title>Contact Us</title>
-    <link rel="icon" href="logo.ico" type="image/png">
+    <link rel="icon" href="assets/img/logo.ico" type="image/png">
     <style> 
     input[type="file"]{
         display: none;
@@ -69,7 +69,7 @@
             </div>
         </div>
         <div class="popup" id="popup">
-            <img src="popup.png">
+            <img src="assets/img/popup.png">
             <h2>Merci</h2>
             <p> Votre commentaire est envoyé avec succées </p>
             <button type="button" id="ok" >OK</button>
@@ -77,6 +77,6 @@
     </div>
     </form>
 </div>
-<script src="code.js"></script>
+<script src="js/code.js"></script>
 </body>
 </html>
