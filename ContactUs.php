@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -7,7 +8,7 @@
     <link href="css/style.css" rel="stylesheet" >
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <title>Contact Us</title>
-    <link rel="icon" href="/assets/img/logo.ico" type="image/png">
+    <link rel="icon" href="assets/img/logo.ico" type="image/png">
     <style> 
     input[type="file"]{
         display: none;
@@ -32,6 +33,7 @@
     }</style>
 </head>
 <body style="background-color:#EEEBDD">
+<?php include'static_navbar.php' ?>
 <div class="container">
     <form method="post" action="ContactUsAction.php">
     <div class="row">
@@ -69,7 +71,7 @@
             </div>
         </div>
         <div class="popup" id="popup">
-            <img src="/assets/img/popup.png">
+            <img src="assets/img/popup.png">
             <h2>Merci</h2>
             <p> Votre commentaire est envoyé avec succées </p>
             <button type="button" id="ok" >OK</button>
