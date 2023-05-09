@@ -1,15 +1,26 @@
-<? php 
+<?php
+global $cnx;
 include_once ('database.php');
 
 // Requête SQL pour extraire les informations de l'étudiant
-$request = "SELECT Num_Inscri, Nom, Prenom, Nom_Filiere, email, Niveau FROM student, filiere, login WHERE student.id = login.id_student AND student.id_filiere = filiere.id AND login.username = 'username'";
+$id = null;
+if(isset($_GET["id"]) and is_int( $_GET["id"]))
+{
+   $id = intval( htmlspecialchars( $_GET["id"]));
+};
+
+$request = "SELECT student.NumInscri AS Num_Inscri , student.Nom AS Nom, student.Prenom AS Prenom, student.Nom_Filiere AS Nom_Filiere, Email AS email, Niveau AS Niveau 
+            FROM student, filiere, login 
+            WHERE student.NumInscri = login.NumInscri 
+            AND student.Nom_Filiere = filiere.Nom";
 
 $result = $cnx->query($request);
 
 // Vérification du résultat de la requête
-if ($result->num_rows > 0) {
-    // Récupération des données de l'étudiant
-    $row = $result->fetch_assoc();
+if ($result !== false) {
+    // Récupération des données de tous les étudiants
+
+    $row = $result->fetchAll()[0];
     $nom = $row["Nom"];
     $prenom = $row["Prenom"];
     $num_inscription = $row["Num_Inscri"];

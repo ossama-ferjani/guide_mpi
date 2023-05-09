@@ -1,5 +1,5 @@
-<? php require('studentcardinfo.php');
-      require('studentcardedit.php');
+<?php global $nom, $prenom, $num_inscription, $email, $numero_telephone, $niveau_etudes, $filiere;
+include_once('studentcardinfo.php');
  ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -39,7 +39,7 @@
             </ul>
             <div class="tab-content">
 
-              <--  ************************************Informations personnelles --> 
+              <!--  ************************************Informations personnelles -->
 
 
               <div class="tab-pane fade show active" id="tab1">
@@ -58,11 +58,12 @@
 
 
 
-              <--  ************************************Editer votre profil -->
+              <!--  ************************************Editer votre profil -->
 
 
-              <form method="post" action="traitement.php">
+
                 <div class="tab-pane fade" id="tab2">
+                  <form method="post" action="studentcardedit.php">
                   <div class="row mt-2">
                     <div class="col-md-6">
                       <label class="labels">Nom</label>
@@ -112,8 +113,9 @@
                       <button class="btn btn-sm btn-outline-primary edit-button text-white" name="submit">Editer</button>
                     </div>
                   </div>
+                  </form>
                 </div>
-              </form>
+
             </div>
           </div>
         </div>
