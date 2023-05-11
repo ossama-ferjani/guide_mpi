@@ -9,7 +9,7 @@ const inputs = form.querySelectorAll('input[required]');
 
 function isValidEmail(email) {
 
-let emailPattern =/^[a-zA-Z]+\.[a-zA-Z]+@insat\.ucar\.tn$/;
+var emailPattern =/^[a-zA-Z]+\.[a-zA-Z]+@insat\.ucar\.tn$/;
     return emailPattern.test(email);
   }
   
