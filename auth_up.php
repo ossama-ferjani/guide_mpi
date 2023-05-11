@@ -16,27 +16,30 @@ try {
 
 // Get form data
 //$email = $_POST['email'];
-$test1 = filter_var($_POST['test1'], FILTER_SANITIZE_EMAIL);
-$email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
-/*$password = $_POST["password"];
+//$email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+$password = $_POST["email"];
+$password = $_POST["password"];
 $name = $_POST["name"];
 $surname = $_POST["surname"];
 $NumInscri = $_POST["NumInscri"];
 $phone = $_POST["phone"];
 $field= $_POST["field"];
-$niveau = $_POST["niveau"];*/
-$password = filter_var($_POST['password'], FILTER_SANITIZE_EMAIL);
+$niveau = $_POST["niveau"];
+/*$password = filter_var($_POST['password'], FILTER_SANITIZE_EMAIL);
 $name = filter_var($_POST['name'], FILTER_SANITIZE_EMAIL);
 $surname = filter_var($_POST['surname'], FILTER_SANITIZE_EMAIL);
 $NumInscri = filter_var($_POST['NumInscri'], FILTER_SANITIZE_EMAIL);
 $phone = filter_var($_POST['phone'], FILTER_SANITIZE_EMAIL);
 $field = filter_var($_POST['field'], FILTER_SANITIZE_EMAIL);
-$niveau = filter_var($_POST['niveau'], FILTER_SANITIZE_EMAIL);
+$niveau = filter_var($_POST['niveau'], FILTER_SANITIZE_EMAIL);*/
 
 // Prepare SQL statement
-$sql1 = "INSERT INTO student (Num Inscri,Nom,Prenom,Telephone,email, password) 
+$sql1 = "INSERT INTO student (Nom,Prenom,Telephone) 
 VALUES ('$NumInscri','$name','$surname','$phone','$email', '$password')";
 $sql2="INSERT INTO filiere(Nom,Niveau) VALUES('$field','$niveau')";
+$sql3 = "INSERT INTO login (Num Inscri,email,password)  
+VALUES ('$NumInscri','$email','$password')";
+
 
 //Execute SQL statement
 if (($conn->query($sql1) === TRUE) && ($conn->query($sql1) === TRUE)) {

@@ -9,7 +9,7 @@ const inputs = form.querySelectorAll('input[required]');
 
 function isValidEmail(email) {
 
-let emailPattern =/^[a-zA-Z]+\.[a-zA-Z]+@insat\.ucar\.tn$/;
+var emailPattern ="^[a-zA-Z]*\.[a-zA-Z]*\@insat\.ucar\.tn$";
     return emailPattern.test(email);
   }
   
@@ -18,11 +18,10 @@ submitButton.addEventListener('click', function(event) {
 
 
 
-    if ((password.value!="") && (isValidEmail(email))) {
+    if ((password.value!="") && (isValidEmail(email)))
       // Conditions are met, allow form submission
-      window.location.href=SignUp.html;
       return true;
-    } else {
+    else {
       // Conditions are not met, prevent form submission
       
 errorMessage.textContent = 'Identifiants incorrects. Veuillez réessayer.';
