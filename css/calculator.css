@@ -130,3 +130,10 @@ ul {
     font-size: 2em;
     border: none;
 }
+
+#moy .chiffre{
+    position: relative;
+    float: right;
+    top: 1.5em;
+    right: 1.5em;
+}

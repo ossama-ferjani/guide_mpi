@@ -71,7 +71,7 @@
                                 <input type="text" class="examen note"><br><br>
                             </li>
                         </ul>
-                        <ul class="row analyse">
+                        <ul class="row algebre">
                             <li class="col-lg-3">
                                 Algèbre
                             </li>
@@ -85,7 +85,7 @@
                                 <input type="text" class="examen note"><br><br>
                             </li>
                         </ul>
-                        <ul class="row analyse">
+                        <ul class="row optique">
                             <li class="col-lg-3">
                                 Optique
                             </li>
@@ -99,7 +99,7 @@
                                 <input type="text" class="examen note"><br><br>
                             </li>
                         </ul>
-                        <ul class="row analyse">
+                        <ul class="row mecanique">
                             <li class="col-lg-3">
                                 Mécanique
                             </li>
@@ -113,7 +113,7 @@
                                 <input type="text" class="examen note"><br><br>
                             </li>
                         </ul>
-                        <ul class="row analyse">
+                        <ul class="row electrostatique">
                             <li class="col-lg-3">
                                 Electrostatique
                             </li>
@@ -127,7 +127,7 @@
                                 <input type="text" class="examen note"><br><br>
                             </li>
                         </ul>
-                        <ul class="row analyse">
+                        <ul class="row circuits">
                             <li class="col-lg-3">
                                 Circuits
                             </li>
@@ -141,7 +141,7 @@
                                 <input type="text" class="examen note"><br><br>
                             </li>
                         </ul>
-                        <ul class="row analyse">
+                        <ul class="row algo">
                             <li class="col-lg-3">
                                 Algorithmique
                             </li>
@@ -155,7 +155,7 @@
                                 <input type="text" class="examen note"><br><br>
                             </li>
                         </ul>
-                        <ul class="row analyse">
+                        <ul class="row programmation">
                             <li class="col-lg-3">
                                 Programmation
                             </li>
@@ -169,7 +169,7 @@
                                 <input type="text" class="examen note"><br><br>
                             </li>
                         </ul>
-                        <ul class="row analyse">
+                        <ul class="row anglais">
                             <li class="col-lg-3">
                                 Anglais
                             </li>
@@ -183,7 +183,7 @@
                                 <input type="text" class="examen note"><br><br>
                             </li>
                         </ul>
-                        <ul class="row analyse">
+                        <ul class="row francais">
                             <li class="col-lg-3">
                                 Français
                             </li>
@@ -197,7 +197,7 @@
                                 <input type="text" class="examen note"><br><br>
                             </li>
                         </ul>
-                        <ul class="row analyse">
+                        <ul class="row droit">
                             <li class="col-lg-3">
                                 Droit
                             </li>
@@ -243,7 +243,7 @@
                                 <input type="text" class="examen note"><br><br>
                             </li>
                         </ul>
-                        <ul class="row analyse">
+                        <ul class="row algebre">
                             <li class="col-lg-3">
                                 Algèbre
                             </li>
@@ -257,7 +257,7 @@
                                 <input type="text" class="examen note"><br><br>
                             </li>
                         </ul>
-                        <ul class="row analyse">
+                        <ul class="row electromagnetisme">
                             <li class="col-lg-3">
                                 Electromagnétisme
                             </li>
@@ -271,7 +271,7 @@
                                 <input type="text" class="examen note"><br><br>
                             </li>
                         </ul>
-                        <ul class="row analyse">
+                        <ul class="row thermo">
                             <li class="col-lg-3">
                                 Thermodynamique
                             </li>
@@ -285,7 +285,7 @@
                                 <input type="text" class="examen note"><br><br>
                             </li>
                         </ul>
-                        <ul class="row analyse">
+                        <ul class="row algo">
                             <li class="col-lg-3">
                                 Algorithmique
                             </li>
@@ -299,7 +299,7 @@
                                 <input type="text" class="examen note"><br><br>
                             </li>
                         </ul>
-                        <ul class="row analyse">
+                        <ul class="row programmation">
                             <li class="col-lg-3">
                                 Programmation
                             </li>
@@ -313,7 +313,7 @@
                                 <input type="text" class="examen note"><br><br>
                             </li>
                         </ul>
-                        <ul class="row analyse">
+                        <ul class="row systeme">
                             <li class="col-lg-3">
                                 Système Logiques
                             </li>
@@ -327,7 +327,7 @@
                                 <input type="text" class="examen note"><br><br>
                             </li>
                         </ul>
-                        <ul class="row analyse">
+                        <ul class="row electronique">
                             <li class="col-lg-3">
                                 Electronique
                             </li>
@@ -341,7 +341,7 @@
                                 <input type="text" class="examen note"><br><br>
                             </li>
                         </ul>
-                        <ul class="row analyse">
+                        <ul class="row anglais">
                             <li class="col-lg-3">
                                 Anglais
                             </li>
@@ -355,7 +355,7 @@
                                 <input type="text" class="examen note"><br><br>
                             </li>
                         </ul>
-                        <ul class="row analyse">
+                        <ul class="row francais">
                             <li class="col-lg-3">
                                 Français
                             </li>
@@ -369,7 +369,7 @@
                                 <input type="text" class="examen note"><br><br>
                             </li>
                         </ul>
-                        <ul class="row analyse">
+                        <ul class="row eco">
                             <li class="col-lg-3">
                                 Economie
                             </li>
@@ -410,6 +410,8 @@
                         <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio3" autocomplete="off">
                         <label class="btn" for="vbtn-radio3">Semestre 3</label>
                     </div>
+                    <h2 class="chiffre">10.00</h2>
+                    
                 </div>
                 <br>
                 <div id="score">

@@ -8,11 +8,13 @@
     <link rel="icon" href="assets/icons/logo_insat.ico">
     <title>Home Page</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="css/dynamic_navbar.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -34,7 +36,7 @@
 
         <br><br><br><br><br><br><br>
         <div id="landing-txt">
-            <h1>INSAT</h2>
+            <h1>INSAT</h1>
                 <br>
                 <h4>Ecole d'ingénieurs publique<br>référence et de renommée internationale
                 </h4>
@@ -145,7 +147,7 @@
                 </div>
                 <ul id="sections_ctn">
                     <li class="col-lg-3 col-md-6 col-sm-12 sections" style="text-align: center;">
-                        <a href="">
+                        <a href="calculator.php">
                             <img src="assets/img/calculator.jpg" alt="Calculator" style="width:50%">
                             <br>
                             <span>

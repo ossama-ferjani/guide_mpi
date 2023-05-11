@@ -1,15 +1,13 @@
 <?php
-    session_start(); 
+    session_start();
+    //$_SESSION['user_id']='12345';
     unset($_SESSION['user_id']);
-    $connected=false;
-    //$_SESSION['user_id']=1;
-   if (isset($_SESSION['user_id'])) {
-        $myBool = true;
-        $data = array("boolValue" => $myBool);
-        echo json_encode($data);
-    } 
-    else {
-        $myBool = false;
-        $data = array("boolValue" => $myBool);
-        echo json_encode($data);
+    if(isset($_SESSION['user_id'])) {
+        setcookie('loggedIn', 'true', time() + 72000, '/');
     }
+    else {
+        setcookie('loggedIn', '', time() - 3600, '/');
+        unset($_COOKIE['loggedIn']);
+    }
+    
+?>

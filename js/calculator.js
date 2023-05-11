@@ -8,6 +8,8 @@ var notes_sem2=document.getElementById("notes-sem2");
 var inputs_sem2=document.querySelectorAll("#notes-sem2 .note");
 
 var clear_btn=document.getElementById('clear');
+  
+
 
 
 //Checking radioBox

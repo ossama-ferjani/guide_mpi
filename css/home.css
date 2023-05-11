@@ -42,151 +42,10 @@ header {
 
 }
 
-/*
-
-.navbar {
-    position: fixed;
-    width: 90%;
-    top: 0;
-    transition: 0.4s;
-    padding: 10px 20px;
-    z-index: 99999999;
-}
-
-@media(max-width:992px) {
-    .navbar-collapse {
-        background-color: #630000;
-    }
-}
-
-
-nav.sticky {
-    background-color: #630000 !important;
-    z-index: 9999;
-
-}
-
-.nav-item {
-    position: relative;
-    margin: 0px 5px 0px 5px;
-    padding: 5px 5px;
-}
-
-.nav-link {
-    position: relative;
-    font-size: 1.25em;
-    color: #EEEBDD;
-    font-weight: bold;
-    border: none;
-    transition: 0.3s;
-}
-
-.nav-link:hover {
-
-    color: #EEEBDD;
-
-}
-
-.nav-link::after {
-    content: '';
-    position: absolute;
-    width: 0px;
-    height: 5px;
-    left: 50%;
-    top: 0;
-    background-color: white;
-    transition: all ease-in-out .2s;
-}
-
-.nav-link:hover::after {
-    width: 100%;
-    left: 0;
-}
-
-.nav-link:active, .nav-link:focus{
-    background-color: transparent !important;
-    color: #EEEBDD !important;
-}
-
-.nav-link:focus {
-    background-color: #EEEBDD;
-    color: black;
-}
-
-.nav-item .dropdown-menu {
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-.nav-item .dropdown-menu .dropdown-item {
-    padding: 10px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 1em;
-}
-
-#bar {
-    content: '';
-    margin: 0 20px;
-    border: 1px solid #EEEBDD;
-    padding: 10px 0px;
-    position: relative;
-    top: 10px;
-
-}
-
-*/
 .bg-body-tertiary {
     background: transparent !important;
 
 }
-
-/*
-.navbar-toggler {
-    background-color: #630000;
-    border-radius: 100px;
-    padding: 10px;
-
-}
-
-
-
-
-
-
-
-
-#sign-in {
-    background-color: #630000;
-    border-radius: 5px;
-    text-decoration: none;
-    color: #EEEBDD;
-    border: none;
-    margin-right: 20px;
-    position: relative;
-    font-size: 1.25em;
-    font-weight: bold;
-
-}
-
-#hidden-sign-up {
-    color: #EEEBDD;
-    background: none;
-    font-size: 1.25em;
-    font-weight: bold;
-    border: none;
-}
-
-#hidden-sign-up:hover {
-    background-color: #760a0a;
-    transition: 300ms;
-}
-
-#sign-in:hover {
-    background-color: #760a0a;
-    transition: 300ms;
-}
-*/
 
 
 #landing-txt {
@@ -298,26 +157,7 @@ h5 {
     font-size: 1.35em !important;
     margin: 10px;
 }
-/*
-.dropdown-menu {
-    border-radius: 0px;
-    width: 100%;
-    text-align: center;
-}
 
-.dropdown-item {
-    font-size: 1em;
-    color: #141E27;
-
-}
-
-.dropdown-item:hover {
-    font-size: 1em;
-    color: #EEEBDD;
-    background-color: #630000;
-
-}
-*/
 .p-head {
     color: #141E27;
     font-weight: bold;
@@ -327,11 +167,11 @@ h5 {
 
 .p-sub {
     color: #141E27;
-    
+
     font-size: 1.5em;
 }
 
-#a_propos_ctn>.row>.row{
+#a_propos_ctn>.row>.row {
     margin-right: 10px;
 }
 
@@ -341,96 +181,7 @@ h5 {
     font-size: 5em;
 
 }
-/*
-#account-dropdown {
-    right: 20px;
-    top: 10px;
 
-}
-
-#account-dropdown>button {
-    background: none !important;
-    border: none;
-    min-width: fit-content;
-    display: flex;
-}
-
-#account-dropdown .dropdown-menu {
-    background-color: #EEEBDD !important;
-    min-width: fit-content;
-    padding: 0;
-
-}
-
-#account-dropdown .show {
-    transition-duration: 300ms;
-
-}
-
-#profile-mini {
-    position: relative;
-    border-radius: 50%;
-    margin-right: 10px;
-    padding: 10px;
-    min-width: 45px;
-    min-height: 25px;
-    background-image: url("../assets/img/prof_img.png");
-    background-size: cover;
-    color: transparent;
-    text-align: center;
-
-}
-
-#account-dropdown>button span {
-    position: relative;
-    top: 10px;
-    font-weight: bold;
-    margin: 0 auto;
-    letter-spacing: 1px;
-}
-
-.dropdown-menu li {
-    display: flex;
-
-}
-
-.dropdown-menu li {
-    text-align: start;
-    padding: 0;
-}
-
-
-.dropdown-menu li:hover {
-    background-color: #630000;
-}
-
-.dropdown-menu li a>span:first-child {
-    background-color: #630000;
-    color: #EEEBDD;
-    margin: 0;
-    font-size: 2em;
-    padding: 10px;
-    margin-right: 10px;
-}
-
-.dropdown-menu li a {
-    padding: 0;
-    margin: auto;
-    margin-right: 10px;
-}
-
-.dropdown-menu li a span:nth-child(2) {
-    font-weight: bold;
-    position: relative;
-    bottom: 0.5em;
-}
-
-
-
-.dropdown-menu li a:hover {
-    background: none;
-}
-*/
 
 @media (min-width: 768px) {
     .animate {
@@ -480,7 +231,7 @@ h5 {
     animation-name: slideIn;
 }
 
-#sections_ctn{
+#sections_ctn {
     text-align: center;
 }
 
@@ -523,4 +274,3 @@ h5 {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
-
