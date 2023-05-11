@@ -1,0 +1,90 @@
+body {
+    background: url('../assets/img/insat.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+    
+  }
+  .form-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+  }
+  .form-container h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  .form-container form {
+    margin-top: 20px;
+  }
+ 
+  .custom-button {
+    
+    width: 150px;
+    height: 50px;
+    background-color: #630000;
+    border-color:#EEEBDD; 
+    color: white;
+    border-radius: 50px;
+  }
+/*
+#password,#email,#nom,#prenom,#tel,#passwordConfirm,#agenda{
+
+
+font-size: x-small;
+font-weight: lighter;
+  }
+  #emailHelp2{
+    font-size: x-small;
+}
+*/
+
+#emailHelp2{
+  position:relative;
+  top: 10px;
+}
+
+#submit{
+  font-weight: bold;
+}
+
+#title {
+    
+    font-weight: bolder;
+    font-size: 35px;
+    text-shadow: 4px 4px 4px #aaa;
+  }
+
+  .invalid-input {
+    box-shadow: 0 0 5px red;
+  }
+
+  
+
+  .form-group {
+    position: relative;
+  }
+  .input_label{
+    position: absolute;
+    font-weight: 200;
+    font-size: medium;
+    font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';;
+  }
+
+  #password,#email,#passwordConfirm {
+    font-family: 'Helvetica', FontAwesome, sans-serif;
+  }
+
+  label{
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+
+  input{
+    min-height: 40px;
+    
+  }
+  
+

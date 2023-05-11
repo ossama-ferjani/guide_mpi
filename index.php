@@ -30,7 +30,7 @@
     <header>
         <!--<img id="landing" src="img/landing.png" alt="Landing">-->
         <?php
-            include('session_start.php');
+            //include('session_start.php');
             include('dynamic_navbar.php');
         ?>
 
@@ -38,12 +38,12 @@
         <div id="landing-txt">
             <h1>INSAT</h1>
                 <br>
-                <h4>Ecole d'ingénieurs publique<br>référence et de renommée internationale
+                <h4>Ecole d'ingénieurs publique de<br>référence et de renommée internationale
                 </h4>
         </div>
         <br><br><br>
         <div id="sign-up2">
-            <a href="#">S'inscrire</a>
+            <a href="./SignUp.php">S'inscrire</a>
 
         </div>
         <br><br>
