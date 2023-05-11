@@ -1,3 +1,6 @@
+<?php
+      include('Login.php');
+    ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -62,8 +65,6 @@
 
     </div>
     <script src="js/script1.js"></script>
-    <?php
-      include('Login.php');
-    ?>
+  
   </body>
 </html>
