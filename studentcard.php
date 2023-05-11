@@ -25,9 +25,7 @@ include_once('studentcardinfo.php');
 
       <div class="card-body">
         <div class="row">
-          <div class="col-md-4">
-            <img src="/assets/img/studentimage.jpg" width="155" height="100" alt="Student Image">
-          </div>
+
           <div class="col-md-8">
             <ul class="nav nav-tabs">
               <li class="nav-item">
