@@ -67,36 +67,38 @@ include_once('studentcardinfo.php');
                   <div class="row mt-2">
                     <div class="col-md-6">
                       <label class="labels">Nom</label>
-                      <input type="text" class="form-control" placeholder="Nom" name="nom" value="">
+                      <input type="text" class="form-control" placeholder="Nom" name="nom" value="<?=$nom  ?>">
                     </div>
                     <div class="col-md-6">
                       <label class="labels">Prénom</label>
-                      <input type="text" class="form-control" value="" placeholder="Prénom" name="prenom">
+                      <input type="text" class="form-control" value="" placeholder="Prénom" name="prenom" value="<?=$prenom  ?>">
                     </div>
                   </div>
 
                   <div class="row mt-3">
                     <div class="col-md-12">
                       <label class="labels">Email</label>
-                      <input type="text" class="form-control" placeholder="entrer votre email universiataire" name="email" value="">
+                      <input type="text" class="form-control" placeholder="entrer votre email universiataire"
+                             name="email" value="<?=$email ?>">
                     </div>
                     <br>
                     <br>
                     <div class="col-md-12">
                       <label class="labels">Numéro de téléphone</label>
-                      <input type="text" class="form-control" placeholder="entrer votre numéro de téléphone" name="numero_telephone" value="">
+                      <input type="text" class="form-control" placeholder="entrer votre numéro de téléphone"
+                             name="numero_telephone" value="<?=$numero_telephone  ?>">
                     </div>
                     <br>
                     <br>
                     <label for="niveau_etudes">Niveau d'études:</label>
-                    <input type="text" list="niveaux" id="niveau_etudes" name="niveau_etudes">
+                    <input type="text" list="niveaux" id="niveau_etudes" name="niveau_etudes" value="<?=$niveau_etudes  ?>">
                     <datalist id="niveaux">
                       <option value="1ère année">
                       <option value="2ème année">
                     </datalist>
 
                     <label for="filières">Filière:</label>
-                    <input type="text" list="filières" id="filieres" name="filiere">
+                    <input type="text" list="filières" id="filieres" name="filiere" value="<?=$filiere  ?>">
                     <datalist id="filières">
                       <option value="MPI">
                       <option value="CBA">

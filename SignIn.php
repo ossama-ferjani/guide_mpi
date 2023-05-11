@@ -39,16 +39,16 @@
             
             <div class="tab-content mt-3">
               <div id="signIn">
-                <form method="post">
+                <form method="post" action="Login.php">
                   <div class="form-group">
                     <label for="email" class="input-label">Email universitaire:</label>
-                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="&#xf0e0;  email@insat.ucar.tn" required>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email" placeholder="&#xf0e0;  email@insat.ucar.tn" required>
                     
                     
                   </div>
                   <div class="form-group">
                     <label for="password" class="input-label">Mot de passe:</label>
-                    <input type="password"  id="password" class="form-control" placeholder="&#xf084;  Mot de passe (minimum 8 caractéres)" required>
+                    <input type="password"  id="password" class="form-control" name="password" placeholder="&#xf084;  Mot de passe (minimum 8 caractéres)" required>
                     <a  id="emailHelp2" class="form-text text-muted" href="reset_password.php">Mot de passe oublié ? </a>
                     <span id="error-message"></span>
 
@@ -62,8 +62,5 @@
 
     </div>
     <script src="js/script1.js"></script>
-    <?php
-      include('Login.php');
-    ?>
   </body>
 </html>

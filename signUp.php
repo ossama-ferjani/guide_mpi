@@ -114,7 +114,7 @@
     <script src="js/script2.js"></script>
 
     <?php
-      include('SignUpp.php');
+      include('SignUp.php');
     ?>
   </body>
 </html>
