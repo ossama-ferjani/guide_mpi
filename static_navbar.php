@@ -11,7 +11,7 @@
                 <li class="nav-item">
                     <a id="home" class="nav-link" href="#">Accueil</a>
                 </li>
-                <!--<li class="nav-item">
+                <li class="nav-item">
                     <a id="home" class="nav-link" href="home.html">Resources et Formation</a>
                 </li>-->
                 <!-- Example single danger button -->
