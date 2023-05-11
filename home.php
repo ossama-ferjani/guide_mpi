@@ -13,7 +13,11 @@
         
         <br><br><br><br><br><br><br>
         <div id="landing-txt">
-            <h1>INSAT</h2>
+
+            
+
+            <h2>INSAT</h2>
+
                 <br>
                 <h4>Ecole d'ingénieurs publique<br>référence et de renommée internationale
                 </h4>
