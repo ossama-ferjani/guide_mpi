@@ -24,14 +24,13 @@ $email = $_POST['email'];
 $password = $_POST['password'];
 // Prepare the SQL query to check if the email and password match
 $sql = "SELECT NumInscri FROM login WHERE email='$email' AND password='$password'";
-echo $sql;
 $result = $cnx->query($sql);
 
 // Check if the query returned a row
 if ($result !== false) {
     // The email and password match, so set the session variable and redirect to the homepage
     $_SESSION['id'] = (int)$result->fetch()['NumInscri'];
-    header('Location: homepage.php');
+    header('Location: home.php');
     exit();
 } else {
     // The email and password don't match, so display an error message

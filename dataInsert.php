@@ -3,7 +3,7 @@ $dest = 'mysql:host=localhost;dbname=guide_mpi_db';
 $user = 'root';
 $pass = '';
 $option = array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8');
-
+$cnx=null;
 
 try {
     $cnx = new PDO($dest, $user, $pass, $option);
@@ -39,12 +39,12 @@ VALUES ('$NumInscri','$name','$surname','$phone','$email', '$password')";
 $sql2="INSERT INTO filiere(Nom,Niveau) VALUES('$field','$niveau')";
 
 //Execute SQL statement
-if (($conn->query($sql1) === TRUE) && ($conn->query($sql1) === TRUE)) {
+if (($cnx->query($sql1) === TRUE) && ($cnx->query($sql1) === TRUE)) {
     echo "New record created successfully";
 } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
+    echo "Error: " . $sql . "<br>" . $cnx->error;
 }
 
 // Close database connection
-$conn->close();
+$cnx->close();
 ?>
