@@ -1,4 +1,5 @@
 <?php
+
 require('publishQuestionAction.php');
 ?>
 <!DOCTYPE html>
