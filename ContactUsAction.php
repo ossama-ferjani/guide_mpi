@@ -1,5 +1,5 @@
 <?php
-include 'securityAction';
+include 'securityAction.php';
 include 'database.php';
 if(isset($_POST["submit"])) {
     $tire = htmlspecialchars($_POST["Titre"]);
@@ -7,7 +7,7 @@ if(isset($_POST["submit"])) {
     $numInscri=$_SESSION["numInscri"];
 
 
-    $stmt = $cnx->prepare("INSERT INTO feedback (contenu, Titre,NumInscri) VALUES ( ?, ?,?)");
+    $stmt = $cnx->prepare("INSERT INTO feedback (Contenu, Titre,NumInscri) VALUES ( ?, ?,?)");
     $stmt->bindParam(1, $comment);
     $stmt->bindParam(2, $titre);   
     $stmt->bindParam(3, $numInscri); 

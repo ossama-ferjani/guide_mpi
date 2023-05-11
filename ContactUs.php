@@ -33,7 +33,7 @@
     }</style>
 </head>
 <body style="background-color:#EEEBDD">
-<?php include'static_navbar.php' ?>
+
 <div class="container">
     <form method="post" action="ContactUsAction.php">
     <div class="row">
