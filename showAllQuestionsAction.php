@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 require('database.php');
 
 //Récupérer les questions par défaut sans recherche

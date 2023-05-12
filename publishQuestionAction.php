@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 require('database.php');
 //Valider le formulaire
 if(isset($_POST['validate'])){
@@ -12,19 +12,19 @@ if(isset($_POST['validate'])){
         $question_description = nl2br(htmlspecialchars($_POST['description']));
         $question_content = nl2br(htmlspecialchars($_POST['content']));
         $question_date = date('d/m/Y');
-        $question_id_author = $_SESSION['id'];
-        $question_pseudo_author = $_SESSION['pseudo'];
+       // $question_id_author = $_SESSION['id'];
+        //$question_pseudo_author = $_SESSION['pseudo'];
 
         //Insérer la question sur la question
-        $insertQuestionOnWebsite = $database->prepare('INSERT INTO questions(titre,description, contenu, id_auteur,pseudo_auteur, date_publication)VALUES(?, ?,  ?,?,?, ?)');
+        $insertQuestionOnWebsite = $cnx->prepare('INSERT INTO questions(titre,description, contenu, id_auteur,pseudo_auteur, date_publication)VALUES(?, ?,  ?,?,?, ?)');
         $insertQuestionOnWebsite->execute(
             array(
                 $question_title, 
                 $question_description, 
                 $question_content, 
-                $question_id_author, 
-                $question_pseudo_author, 
-                $question_date
+              //  $question_id_author, 
+               // $question_pseudo_author, 
+               // $question_date
             )
         );
         
