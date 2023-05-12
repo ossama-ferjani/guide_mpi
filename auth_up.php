@@ -1,12 +1,15 @@
 <?php
 
-
+/*
 ob_start();
 
 $dest = 'mysql:host=localhost;dbname=guide_mpi_db';
 $user = 'root';
 $pass = '';
 $option = array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8');
+*/
+
+include('database.php');
 
 try {
     $cnx = new PDO($dest, $user, $pass, $option);

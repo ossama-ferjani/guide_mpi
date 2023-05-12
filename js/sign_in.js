@@ -24,7 +24,7 @@ submitButton.addEventListener('click', function(event) {
     else {
       // Conditions are not met, prevent form submission
       
-errorMessage.textContent = 'Identifiants incorrects. Veuillez réessayer.';
+errorMessage.textContent = 'Veuillez vérifier vos coordonnées.';
 errorMessage.style.color = 'red';
 errorMessage.style.fontSize = 'smaller';
 

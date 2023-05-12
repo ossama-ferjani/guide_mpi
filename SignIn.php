@@ -21,6 +21,7 @@
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/sign_in.js" defer></script>
 
@@ -53,7 +54,7 @@
                   <label for="password" class="input-label">Mot de passe:</label>
                   <input type="password" id="password" name="password" class="form-control" placeholder="&#xf084;  Mot de passe (minimum 8 caractéres)" required>
                   <a id="emailHelp2" class="form-text text-muted" href="reset_password.php">Mot de passe oublié ? </a>
-                  <span id="error-message"></span>
+                  
 
                 </div>
                 <br>

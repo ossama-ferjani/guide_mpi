@@ -28,7 +28,7 @@ const phoneInput = document.getElementById('tel');
       }
     
  submitButton.addEventListener('click', function(event) { 
-    if (isNaN(name)) {
+    if (isNaN(name.value)) {
        test1=true;
     } else {
         nameErrorMessage.textContent = 'Veuillez vérifier votre nom.';
@@ -36,7 +36,7 @@ const phoneInput = document.getElementById('tel');
         nameErrorMessage.style.fontSize = 'smaller';
          test1=false;
     }
-    if (isNaN(surname)) {
+    if (isNaN(surname.value)) {
        test2=true;
     } else {
         snErrorMessage.textContent = 'Veuillez vérifier votre prénom.';
@@ -73,13 +73,13 @@ const phoneInput = document.getElementById('tel');
         inscrierrorMessage.style.fontSize = 'smaller';
          test4=false;
     }
-   
-  if (isValidEmail(email)) 
+    const domain = "@insat.ucar.tn";
+  if ((email.value.charAt(0)!="@")&& (email.value.endsWith(domain)))
            test5=true;
         else {
-            /*mailerrorMessage.textContent = 'Veuillez saisir une adresse email (universitaire) valide.';
+            mailerrorMessage.textContent = 'Veuillez saisir une adresse email (universitaire) valide.';
             mailerrorMessage.style.color = 'red';
-            mailerrorMessage.style.fontSize = 'smaller';*/
+            mailerrorMessage.style.fontSize = 'smaller';
              test5=false;
         }
    

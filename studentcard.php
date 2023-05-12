@@ -85,11 +85,12 @@ include_once('studentcardinfo.php');
                   </div>
 
                   <div class="row mt-3">
+                    <!--
                     <div class="col-md-12">
                       <label class="labels">Email</label>
                       <input type="text" class="form-control" placeholder="entrer votre email universiataire"
-                             name="email" value="<?=$email ?>">
-                    </div>
+                             name="email" value="<?=$email ?>"
+                    </div>-->
                     <br>
                     <br>
                     <div class="col-md-12">

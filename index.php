@@ -175,7 +175,7 @@
                         </a>
                     </li>
                     <li class="col-lg-3 col-md-6 col-sm-12 sections" style="text-align: center;">
-                        <a href="">
+                        <a href="./pres_filiere.php">
                             <img src="assets/img/paths.jpg" alt="Calculator" style="width:60%">
                             <br>
                             <span>

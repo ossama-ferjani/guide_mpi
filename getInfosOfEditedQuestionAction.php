@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 require('database.php');
 
 //Vérifier si l'id de la question est bien passé en paramètre dans l'URL
@@ -8,7 +8,7 @@ if(isset($_GET['id']) AND !empty($_GET['id'])){
     $idOfQuestion = $_GET['id'];
 
     //Vérifier si la question existe
-    $checkIfQuestionExists = $cnx->prepare('SELECT * FROM questions WHERE id = ?');
+    $checkIfQuestionExists = $bdd->prepare('SELECT * FROM questions WHERE id = ?');
     $checkIfQuestionExists->execute(array($idOfQuestion));
 
     if($checkIfQuestionExists->rowCount() > 0){

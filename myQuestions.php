@@ -1,6 +1,6 @@
 <?php 
    
-    require('myQuestionsAction.php'); 
+    //require('myQuestionsAction.php'); 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,12 +13,12 @@
 
         <?php 
 
-            while($question = $getAllMyQuestions->fetch()){
+           // while($question = $getAllMyQuestions->fetch()){
                 ?>
                 <div class="card">
                     <h5 class="card-header">
                         <a href="article.php?id=<?= $question['id']; ?>">
-                            <? $question['titre']; ?>
+                            <?= $question['titre']; ?>
                         </a>
                     </h5>
                     <div class="card-body">
@@ -32,7 +32,7 @@
                 </div>
                 <br>
                 <?php
-           }
+           // }
 
         ?>
 

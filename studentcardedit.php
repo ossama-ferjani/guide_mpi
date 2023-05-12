@@ -1,5 +1,5 @@
 <?php
-include_once ('database_studentcard.php');
+include_once ('database.php');
 global $cnx;
 
 session_start();
@@ -15,7 +15,7 @@ if(empty($_POST)){
 $isFirst = true;
 $toExecute = array();
 
-$num_inscriptionPost = (int)$_SESSION['id'];
+$num_inscriptionPost = $_SESSION['id'];
 
 $sql = "UPDATE student SET ";
 
@@ -32,25 +32,19 @@ if(isset($_POST['prenom'])){
   $sql .= " Prenom = ? ";
   $toExecute[] = $prenomPost;
 }
-if(isset($_POST['email'])){
-  $emailPost = $_POST['email'];
-  if(!$isFirst) $sql .=" ,";
-  else $isFirst = false;
-  $sql .= " Email = ? ";
-  $toExecute[] = $emailPost;
-}
+
 if(isset($_POST['numero_telephone'])){
   $numero_telephonePost = $_POST['numero_telephone'];
   if(!$isFirst) $sql .=" ,";
   else $isFirst = false;
-  $sql .= " Numero_Telephone = ? ";
+  $sql .= " Telephone = ? ";
   $toExecute[] = $numero_telephonePost;
 }
 if(isset($_POST['niveau_etudes'])){
   $niveau_etudesPost = $_POST['niveau_etudes'];
   if(!$isFirst) $sql .=" ,";
   else $isFirst = false;
-  $sql .= " Niveau_Etudes = ? ";
+  $sql .= " Niveau= ? ";
   $toExecute[] = $niveau_etudesPost;
 }
 if(isset($_POST['filiere'])){
@@ -61,7 +55,7 @@ if(isset($_POST['filiere'])){
   $toExecute[] = $filierePost;
 }
 
-$sql .=  "WHERE Num_Inscri = ? ;";
+$sql .=  "WHERE NumInscri = ? ;";
 $toExecute[] = $num_inscriptionPost;
 
 if ($cnx->prepare($sql)->execute($toExecute) === TRUE) {
