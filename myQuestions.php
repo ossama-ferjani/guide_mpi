@@ -1,5 +1,5 @@
 <?php 
-    include ('session_start.php');
+   session_start();
     require('myQuestionsAction.php'); 
 ?>
 <!DOCTYPE html>
