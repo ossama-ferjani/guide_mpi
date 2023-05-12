@@ -7,11 +7,9 @@
 
     <title>Contact Us</title>
     <link rel="icon" href="assets/icons/logo_insat.ico" type="image/png">
-    
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="css/contact_us.css" rel="stylesheet">
     <link rel="stylesheet" href="css/static_navbar.css">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
