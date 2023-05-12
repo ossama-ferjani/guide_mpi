@@ -1,26 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php include 'head.php' ?>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/icons/logo_insat.ico">
+    <title>Home Page</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/dynamic_navbar.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/home.js" defer></script>
+
+
+</head>
 
 <body>
 
 
     <header>
         <!--<img id="landing" src="img/landing.png" alt="Landing">-->
+        <?php
+            session_start();
+            //echo $_SESSION['id'];
+            //include('session_start.php');
+            include('dynamic_navbar.php');
+        ?>
 
-        <? include 'navbar.php' ?>
-        
         <br><br><br><br><br><br><br>
         <div id="landing-txt">
-            <h1>INSAT</h2>
+            <h1>INSAT</h1>
                 <br>
-                <h4>Ecole d'ingénieurs publique<br>référence et de renommée internationale
+                <h4>Ecole d'ingénieurs publique de<br>référence et de renommée internationale
                 </h4>
         </div>
         <br><br><br>
         <div id="sign-up2">
-            <a href="#">S'inscrire</a>
+            <a href="./SignUp.php">S'inscrire</a>
 
         </div>
         <br><br>
@@ -32,7 +57,7 @@
             </a>
     </header>
     <section>
-        <div class="ctn-2">
+        <div id='a_propos_ctn' class="ctn-2">
             <div class="row">
                 <div class="row col-lg-8 col-sm-4">
                     <div class="col-lg-6 col-md-3 col-sm-3">
@@ -57,9 +82,8 @@
 
                     </div>
                     <div class="col-lg-6 col-md-3 col-sm-3">
-                        <h4 class="p-head">C'est quoi la filière MPI ?</h4>
-                        <p class="p-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto unde
-                            consectetur
+                        <h4 class="p-head">La vie associative à l'INSAT</h4>
+                        <p class="p-sub">La vie associative à l'INSAT est foisonnante, et son dynamisme anime une vie étudiante riche et variée tout au long de l’année universitaire.
                         </p>
 
                     </div>
@@ -118,7 +142,68 @@
                 </div>
 
             </div>
-            <br>
+            <br><br><br>
+            <div class="row">
+                <div class="col-lg-12" style="text-align: center;">
+                    <h2>Explorer l'INSAT</h2>
+                </div>
+                <ul id="sections_ctn">
+                    <li class="col-lg-3 col-md-6 col-sm-12 sections" style="text-align: center;">
+                        <a href="calculator.php">
+                            <img src="assets/img/calculator.jpg" alt="Calculator" style="width:50%">
+                            <br>
+                            <span>
+                                Calculer votre moyenne <br> Moyenne | Score
+                            </span>
+                        </a>
+                    </li>
+                    <li class="col-lg-3 col-md-6 col-sm-12 sections" style="text-align: center;">
+                        <a href="">
+                            <img src="assets/img/forum.jpg" alt="Forum" style="width:85%">
+                            <br>
+                            <span>
+                                Le forum <br> Q&A
+                            </span>
+                        </a>
+                    </li>
+                    <li class="col-lg-3 col-md-6 col-sm-12 sections" style="text-align: center;">
+                        <a href="">
+                            <img src="assets/img/ressources.jpg" alt="Resources" style="width:60%;padding:10px;">
+                            <br>
+                            <span>
+                                Les ressources
+                            </span>
+                        </a>
+                    </li>
+                    <li class="col-lg-3 col-md-6 col-sm-12 sections" style="text-align: center;">
+                        <a href="">
+                            <img src="assets/img/paths.jpg" alt="Calculator" style="width:60%">
+                            <br>
+                            <span>
+                                Presentation des Filieres
+                            </span>
+                        </a>
+                    </li>
+                    <li class="col-lg-3 col-md-6 col-sm-12 sections" style="text-align: center;">
+                        <a href="">
+                            <img src="assets/img/vie_asso.jpg" alt="Calculator" style="width:75%">
+                            <br>
+                            <span>
+                                La vie associative <br>dans l'INSAT
+                            </span>
+                        </a>
+                    </li>
+                    <li class="col-lg-3 col-md-6 col-sm-12 sections" style="text-align: center;">
+                        <a href="">
+                            <img src="assets/img/convention.jpg" alt="Calculator" style="width:55%;">
+                            <br>
+                            <span>
+                                Nos conventions
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
 
@@ -171,7 +256,7 @@
 
         </div>
     </footer>
-    <script src="js/home.js"></script>
+
 </body>
 
 

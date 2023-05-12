@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+    background-color: #D8B6A4;
+}
+
+ul {
+    list-style: none;
+}
+
+#big-ctn {
+    width: 80%;
+    background-color: #EEEBDD;
+    min-height: 500px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    text-align: center;
+}
+
+#big-ctn h2 {
+    color: #182747;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#big-ctn .row .col-lg-8 {
+    border-right: 2px solid #182747;
+    min-height: 350px;
+}
+
+#big-ctn .row .col-lg-8 label {
+    color: black;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.col-lg-8 .list-group-item input {
+    min-height: 20px;
+    width: 20px;
+}
+
+#big-ctn .row .col-lg-4 {
+    text-align: left;
+}
+
+#moy .btn-group-vertical {
+    width: 50%;
+    margin-left: 30px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+#score .btn-group-vertical {
+    width: 30%;
+    margin-left: 30px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+#score .btn-group-vertical label,
+#moy .btn-group-vertical label {
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+#score .btn-group-vertical label:hover,
+#moy .btn-group-vertical label:hover {
+    background-color: #630000 !important;
+    color: #EEEBDD;
+
+
+}
+
+
+#moy h5,
+#score h5 {
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+.note {
+    max-width: 60px;
+    margin: 4px auto;
+    border: 1px solid black;
+    border-radius: 0px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.notes li {
+    font-weight: bold;
+    overflow: hidden;
+}
+
+#calculer>button{
+    padding: 20px 20px;
+    border-radius: 40px;
+    background-color: #182747;
+    color: #EEEBDD;
+    font-weight: 900;
+    font-size: 1.5em;
+    border: none;
+    
+}
+
+#calculer>button span{
+    margin-left: 10px;
+    letter-spacing: 1px;
+}
+
+#clear {
+    position: relative;
+    margin-left:40% ;
+}
+
+#clear>button{
+    padding: 10px 20px;
+    border-radius: 40px;
+    background-color: green;
+    color: #EEEBDD;
+    font-weight: 900;
+    font-size: 2em;
+    border: none;
+}
+
+#moy .chiffre{
+    position: relative;
+    float: right;
+    top: 1.5em;
+    right: 1.5em;
+}
