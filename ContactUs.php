@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Contact Us</title>
-    <link rel="icon" href="assets/img/logo.ico" type="image/png">
+    <link rel="icon" href="assets/icons/logo_insat.ico" type="image/png">
     
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="css/contact_us.css" rel="stylesheet">
@@ -17,6 +17,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+
+    
     
     <style>
         input[type="file"] {
@@ -45,20 +47,23 @@
 
 <body style="background-color:#EEEBDD">
     <?php
+        session_start();
+        //echo $_SESSION["id"];
         include('static_navbar.php');
+        include('securityAction.php');
     ?>
     <div class="container">
-        <form method="post" action="ContactUsAction.php">
+        <form method="post" action="">
             <div class="row">
                 <div class="col-md-7" style="background-color: white;">
                     <h4>YOUR FEEDBACK </h4>
                     <div class="mb-3">
                         <label for="formGroupExampleInput" class="form-label">Titre</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput" name="Titre" placeholder="Donner un titre">
+                        <input type="text" class="form-control" id="formGroupExampleInput" name="titre" placeholder="Donner un titre">
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label">Commentaire</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" name="comment" placeholder="Taper votre commentaire ici" rows="3" style="height: 80px;"></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" name="contenu" placeholder="Taper votre commentaire ici" rows="3" style="height: 80px;"></textarea>
                     </div>
                     <div>
                         <input type="file" id="Upload_button">
@@ -97,6 +102,9 @@
         </form>
     </div>
     <script src="js/contact_us.js"></script>
+    <?php
+        include('ContactUsAction.php');
+    ?>
 </body>
 
 </html>

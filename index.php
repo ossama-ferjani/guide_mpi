@@ -75,9 +75,8 @@
 
                     </div>
                     <div class="col-lg-6 col-md-3 col-sm-3">
-                        <h4 class="p-head">MPI, et après ?</h4>
-                        <p class="p-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto unde
-                            consectetur
+                        <h4 class="p-head">Pourquoi choisir l'INSAT?</h4>
+                        <p class="p-sub">l’INSAT se prévaut de la bonne réputation de ses diplômés. Le score d’orientation à cet établissement est en hausse d’une année à l’autre grâce à la détermination des enseignants et à la qualité de ses programmes qui offrent un dosage judicieux de connaissances théoriques et pratiques.
                         </p>
 
                     </div>
@@ -143,7 +142,7 @@
 
             </div>
             <br><br><br>
-            <div class="row">
+            <div class="row" id="explorer_ctn">
                 <div class="col-lg-12" style="text-align: center;">
                     <h2>Explorer l'INSAT</h2>
                 </div>
@@ -185,7 +184,7 @@
                         </a>
                     </li>
                     <li class="col-lg-3 col-md-6 col-sm-12 sections" style="text-align: center;">
-                        <a href="">
+                        <a href="./events.php">
                             <img src="assets/img/vie_asso.jpg" alt="Calculator" style="width:75%">
                             <br>
                             <span>
