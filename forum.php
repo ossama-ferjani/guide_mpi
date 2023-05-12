@@ -1,5 +1,5 @@
 <?php 
-    session_start();
+    include ('session_start.php');
    include('showAllQuestionsAction.php');
 ?>
 <!DOCTYPE html>
@@ -43,7 +43,7 @@
                     </div>
                     <div class="card-footer">
                         
-                        Publié par <a href="studentcard.php?id=<?= $question['id_auteur']; ?>"><?= $question['pseudo_auteur']; ?></a> le <?= $question['date_publication']; ?>
+                        Publié par <a href="profile.php?id=<?= $question['id_auteur']; ?>"><?= $question['pseudo_auteur']; ?></a> le <?= $question['date_publication']; ?>
                     </div>
                 </div>
                 <br>

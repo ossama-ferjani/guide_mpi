@@ -8,18 +8,29 @@ include_once('studentcardinfo.php');
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Student Card</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
+  <link rel="icon" href="assets/icons/logo_insat.ico" type="image/png">
+  
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/studentcard.css">
+  <link rel="stylesheet" href="css/static_navbar.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
+  <?php
+    include('static_navbar.php');
+  ?>
   <div class="container mt-5">
     <div class="card">
       <div class="card-header text-center">
         <div class="col-md-12">
-          <img src="/assets/icons/insatlogo1.jpg" alt="Logo" class="float-start me-3">
-          <h2 class="text-black d-inline-block">Institut National Des Sciences Appliquées Et De Technologie</h2>
+          <img src="./assets/img/logo_insat.png" alt="Logo" class="float-start me-3">
+          <h2 class="text-black d-inline-block">Carte Etudiant</h2>
         </div>
       </div>
 
