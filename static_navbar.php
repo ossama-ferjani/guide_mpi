@@ -1,7 +1,7 @@
 <script src="js/static_navbar.js" defer></script>
 
 <?php
-    include('session_start.php');
+include('session_start.php');
 ?>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
@@ -41,54 +41,55 @@
             </ul>
 
             <ul class="acc log">
-                <li id="logged-out-nav" >
+                <li id="logged-out-nav">
                     <ul class="navbar-nav list-inline">
+
+                        <li>
+                            <a id="sign-up" class="btn btn-primary" href="./SignUp.php" role="button">S'inscrire</a>
+
+                        </li>
+
                         <li>
                             <span id="bar"></span>
                         </li>
+
                         <li>
-                            <a id="sign-up" class="btn btn-primary" href="#" role="button">S'inscrire</a>
+                            <a id="sign-in" class="btn btn-primary" href="./SignIn.php" role="button">Se connecter</a>
 
                         </li>
-                        
-                        <!--
-                        <li>
-                            <a id="sign-in" class="btn btn-primary" href="#" role="button">Se connecter</a>
 
-                        </li>
-                        -->
                     </ul>
-                    
+
                 </li>
                 <li id="logged-in-nav">
-                        <div id="account-dropdown" class="dropdown">
-                            <button class="btn btn-primary dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <div id="profile-mini">U</div>
-                                <span>username</span>
-                            </button>
-                            <ul class="dropdown-menu animate slideIn">
-                                <li><a class="dropdown-item" href="./studentcard.php"><span class="material-symbols-outlined">
-                                            person
+                    <div id="account-dropdown" class="dropdown">
+                        <button class="btn btn-primary dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div id="profile-mini">U</div>
+                            <span id="username">username</span>
+                        </button>
+                        <ul class="dropdown-menu animate slideIn">
+                            <li><a class="dropdown-item" href="./studentcard.php"><span class="material-symbols-outlined">
+                                        person
 
-                                        </span><span>Mon Compte</span></a></li>
-                                <li><a class="dropdown-item" href="#"><span class="material-symbols-outlined">
-                                            mail
-                                        </span><span>Messages</span></a></li>
-                                <li><a class="dropdown-item" href="#"><span class="material-symbols-outlined">
-                                            settings
-                                        </span><span>Paramètres</span></a></li>
-                                <li id='disconnect'>
-                                    <a class="dropdown-item" href="?logout=true"><span class="material-symbols-outlined">
-                                            logout
-                                        </span><span>Se déconnecter</span>
-                                    
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
+                                    </span><span>Mon Compte</span></a></li>
+                            <li><a class="dropdown-item" href="#"><span class="material-symbols-outlined">
+                                        mail
+                                    </span><span>Messages</span></a></li>
+                            <li><a class="dropdown-item" href="#"><span class="material-symbols-outlined">
+                                        settings
+                                    </span><span>Paramètres</span></a></li>
+                            <li id='disconnect'>
+                                <a class="dropdown-item" href="?logout=true"><span class="material-symbols-outlined">
+                                        logout
+                                    </span><span>Se déconnecter</span>
+
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
-            </ul>  
+                </li>
+            </ul>
 
 
 

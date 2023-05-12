@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+  background-color: #D8B6A4;
+}
+
+/* Center the h1 element */
+h1 {
+  text-align: center;
+}
+
+/* Add some margin to the bottom of the h1 element */
+h1.mb-4 {
+  margin-bottom: 2rem !important;
+}
+
+/* Add some margin to the bottom of the event cards */
+.card.mb-4 {
+  margin-bottom: 1rem !important;
+}
+
+/* Style the active event card */
+.card.active {
+  background-color: #F5F5F5;
+  cursor: default;
+}
+
+/* Style the event modal */
+.modal-content {
+  border-radius: 0;
+}
+.modal-header {
+  background-color: #F5F5F5;
+  border-bottom: none;
+}
+.modal-title {
+  color: #007BFF;
+}
+.modal-body {
+  text-align: center;
+}
+
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #EEEBDD;
+  padding: 0;
+  text-align: center;
+}
+
+#events-container{
+  margin: 20px;
+}
+
+.card{
+  text-align: center;
+  margin: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border: none;
+  overflow: hidden;
+}
+
+h1{
+  font-weight: bold;
+  color:#0A1D37 ;
+}
+
+
+.detail-btn {
+  padding: 10px !important;
+  background-color: #0A1D37;
+  color: whitesmoke;
+  border-radius: 4px;
+  border: 0;
+  box-shadow: #0A1D37 0 -1px 3px 0 inset,rgba(0,44,97,.1) 0 3px 6px 0;
+  cursor: pointer;
+  font-family: "Space Grotesk",-apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  position: relative;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  transition: all .2s cubic-bezier(.22, .61, .36, 1);
+}
+
+.detail-btn:hover {
+  background-color: #0A1D37;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .detail-btn {
+    padding: 16px 44px;
+    min-width: 150px;
+  }
+}
+
+#vp{
+  background-color: #630000;
+  color: #EEEBDD;
+  padding: 10px;
+  border-radius: 4px;
+  border: 0;
+  box-shadow: #630000 0 -1px 3px 0 inset,rgba(0,44,97,.1) 0 3px 6px 0;
+  cursor: pointer;
+  font-family: "Space Grotesk",-apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  position: relative;
+
+}
+
+#vp:hover{
+  background-color: #801111;
+  box-shadow: #801111 0 -1px 3px 0 inset,rgba(0,44,97,.1) 0 3px 6px 0;
+}

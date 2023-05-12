@@ -63,7 +63,7 @@
                         <div id="account-dropdown" class="dropdown">
                             <button class="btn btn-primary dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <div id="profile-mini">U</div>
-                                <span>username</span>
+                                <span id="username">username</span>
                             </button>
                             <ul class="dropdown-menu animate slideIn">
                                 <li><a class="dropdown-item" href="./studentcard.php"><span class="material-symbols-outlined">
