@@ -1,0 +1,1 @@
+-Dans la fin du projet, nous avons lié tous les fichiers et testé le site sur un seul PC (à fin de verifier le bon fonctionnement de la base de données ),puis on a fait le dernier "push" dans github (main) à partir de cet PC .

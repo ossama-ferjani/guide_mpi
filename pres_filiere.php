@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>YouTube Video Carousel</title>
+    <title>Presentation des Filiere</title>
     <link rel="icon" href="assets/icons/logo_insat.ico" type="image/png">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">

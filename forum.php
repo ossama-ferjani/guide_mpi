@@ -1,6 +1,5 @@
-<?php 
-    session_start();
-    require('showAllQuestionsAction.php');
+<?php     
+   include('showAllQuestionsAction.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">

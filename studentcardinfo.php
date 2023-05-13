@@ -1,13 +1,15 @@
 <?php
-global $cnx;
-include_once ('database.php');
+//global $cnx;
 
 session_start();
-if(!isset($_SESSION['id'])){
+include_once ('database.php');
+include ('securityAction.php');
+
+/*if(!isset($_SESSION['id'])){
     header("Location: SignIn.php");
     exit(302);
 
-}
+}*/
 $id = $_SESSION['id'];
 // Requête SQL pour extraire les informations de l'étudiant
 $request = "SELECT * FROM student AS s INNER JOIN login AS l ON s.NumInscri=l.NumInscri WHERE s.NumInscri = $id";

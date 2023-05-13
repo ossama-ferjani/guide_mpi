@@ -1,8 +1,10 @@
 <?php
-include_once ('database.php');
-global $cnx;
-
 session_start();
+include_once ('database.php');
+include('securityAction.php');
+//global $cnx;
+
+/*
 if(!isset($_SESSION['id'])){
   header('Location: SignIn.php');
   exit(302);
@@ -10,7 +12,7 @@ if(!isset($_SESSION['id'])){
 if(empty($_POST)){
   header('Location: studentcard.php');
   exit();
-}
+}*/
 // Récupération des données envoyées par le formulaire POST
 $isFirst = true;
 $toExecute = array();

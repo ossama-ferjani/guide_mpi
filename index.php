@@ -28,11 +28,8 @@
 
 
     <header>
-        <!--<img id="landing" src="img/landing.png" alt="Landing">-->
         <?php
             session_start();
-            //echo $_SESSION['id'];
-            //include('session_start.php');
             include('dynamic_navbar.php');
         ?>
 
@@ -166,7 +163,7 @@
                         </a>
                     </li>
                     <li class="col-lg-3 col-md-6 col-sm-12 sections" style="text-align: center;">
-                        <a href="">
+                        <a href="https://guidempi.notion.site/guidempi/Guide-MPI-INSAT-e887f059abc1461cba5bf2f257130f80">
                             <img src="assets/img/ressources.jpg" alt="Resources" style="width:60%;padding:10px;">
                             <br>
                             <span>

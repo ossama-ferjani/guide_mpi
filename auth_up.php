@@ -1,14 +1,5 @@
 <?php
 
-/*
-ob_start();
-
-$dest = 'mysql:host=localhost;dbname=guide_mpi_db';
-$user = 'root';
-$pass = '';
-$option = array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8');
-*/
-
 include('database.php');
 
 try {
@@ -22,7 +13,6 @@ try {
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-    //echo "POOOOOOOOOST";
     $email = $_POST["email"];
     $password = $_POST["password"];
     $name = $_POST["name"];
@@ -33,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $niveau = $_POST["niveau"];
 
     try {
-        // Start a transaction
+
         $cnx->beginTransaction();
 
         // Insert the user data into the "student" table
@@ -82,7 +72,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         //exit();
         
     } catch (PDOException $e) {
-        // Roll back the transaction and display an error message
+     
         $cnx->rollBack();
         echo "Error inserting data into database: " . $e->getMessage();
     }

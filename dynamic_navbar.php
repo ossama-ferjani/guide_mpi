@@ -1,8 +1,8 @@
 <script src="js/dynamic_navbar.js" defer></script>
 
 <?php
-    //session_start();
-    include('session_start.php');
+    
+    include('navbar_log.php');
 ?>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">

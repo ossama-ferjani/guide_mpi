@@ -21,7 +21,7 @@
 
   </head>
   <body>
-  <?php
+  <?php 
     session_start();
     include('static_navbar.php');
   ?>

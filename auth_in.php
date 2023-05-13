@@ -1,13 +1,5 @@
 <?php
 
-/*ob_start();
-
-$dest = 'mysql:host=localhost;dbname=guide_mpi_db';
-$user = 'root';
-$pass = '';
-$option = array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8');
-//$cnx = null;*/
-
 include('database.php');
 
 try {
@@ -41,8 +33,6 @@ if (isset($_POST["submit"])) {
         $_SESSION["username"] = $student_rows[0]['Nom'];
         echo "<script> location.replace('./index.php'); </script>";
     } else {
-        //$message = "<script>alert('veuillez vérifier vos coordonnées')</script>";
-        //echo $message;
         echo "<script>
             swal('Attention!', 'Veuillez verifier vos coordnnées!', 'warning');
         </script>";
